@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- AdminLTE -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-primary navbar-dark">
+      <a class="navbar-brand" href="#">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <div class="card mb-4">
+      <div class="card-body">
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="textInput">Text</label>
+                <input type="text" class="form-control" id="textInput" placeholder="Enter ...">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="textInputDisabled">Text Disabled</label>
+                <input type="text" class="form-control" id="textInputDisabled" placeholder="Enter ..." disabled>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="textareaInput">Textarea</label>
+                <textarea class="form-control" id="textareaInput" rows="3" placeholder="Enter ..."></textarea>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="textareaInputDisabled">Textarea Disabled</label>
+                <textarea class="form-control" id="textareaInputDisabled" rows="3" placeholder="Enter ..." disabled></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Task List</h3>
+      </div>
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Task</th>
+              <th>Progress</th>
+              <th>Label</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Update software</td>
+              <td>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" style="width: 55%;"></div>
+                </div>
+              </td>
+              <td><span class="badge badge-danger">55%</span></td>
+              <td>
+                <button class="btn btn-primary btn-sm">Edit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Clean database</td>
+              <td>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" style="width: 70%;"></div>
+                </div>
+              </td>
+              <td><span class="badge badge-warning">70%</span></td>
+              <td>
+                <button class="btn btn-primary btn-sm">Edit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Cron job running</td>
+              <td>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" style="width: 30%;"></div>
+                </div>
+              </td>
+              <td><span class="badge badge-primary">30%</span></td>
+              <td>
+                <button class="btn btn-primary btn-sm">Edit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Fix bugs</td>
+              <td>
+                <div class="progress">
+                  <div class="progress-bar bg-success" style="width: 90%;"></div>
+                </div>
+              </td>
+              <td><span class="badge badge-success">90%</span></td>
+              <td>
+                <button class="btn btn-primary btn-sm">Edit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
